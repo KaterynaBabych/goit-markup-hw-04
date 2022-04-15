@@ -78,17 +78,53 @@ address {
   line-height: 1.38;
 }
 
+/* Header */
+.mail {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.mail:hover,
+.mail:focus {
+  color: var(--acent-color);
+}
+.mail-icon {
+  fill: currentColor;
+  margin-right: 10px;
+  align-items: center;
+  fill: currentColor;
+}
+.mail:hover,
+.mail:focus .mail-icon {
+  fill: var(--acent-color);
+}
+.tel {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.tel:hover,
+.tel:focus {
+  color: var(--acent-color);
+}
+
 /* Hero */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-
   text-align: center;
-  background-color: #2f303a;
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+  padding-top: 200px;
+  /* padding-bottom: 200px; */
 
   color: var(--hero-text-color);
   font-weight: 900;
@@ -96,11 +132,35 @@ address {
   line-height: 1.36;
   letter-spacing: 0.06em;
 }
+/* кнопка */
+.button-hero {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  /* margin-bottom: 200px; */
+
+  color: #ffffff;
+  background-color: #2196f3;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+}
 /* main-nav */
 .main-nav {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
+}
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/hero.jpg');
+
+  margin: 0 auto;
 }
 
 /* site nav */
@@ -148,28 +208,7 @@ address {
   color: var(--acent-color);
 }
 /* Контакты */
-.mail {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.mail:hover,
-.mail:focus {
-  color: var(--acent-color);
-}
-.tel {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.tel:hover,
-.tel:focus {
-  color: var(--acent-color);
-}
+
 .adress {
   color: var(--hero-text-color);
   font-weight: 400;
@@ -202,6 +241,17 @@ address {
 }
 .plus .item:not(:last-child) {
   margin-right: 30px;
+}
+
+.icon-fon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+}
+
+.item-icon {
+  margin: auto;
+  background-position: center;
 }
 
 /* Секция Work чем мы занимаемся*/
@@ -279,6 +329,8 @@ address {
 .team-item {
   border: 1px solid #eeeeee;
   border-radius: 4px;
+  /* box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14),
+    3px 0px 1px rgba(0, 0, 0, 0.12); */
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -311,21 +363,7 @@ address {
   line-height: 2.42;
   letter-spacing: 0.03em;
 }
-/* кнопка */
-.button-hero {
-  display: inline-block;
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
 
-  color: #ffffff;
-  background-color: #2196f3;
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
-}
 /* portfolio.html */
 .portfolio-main {
   padding: 94px 0;
