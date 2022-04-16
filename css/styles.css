@@ -175,7 +175,6 @@ address {
   margin-top: 0;
   margin-bottom: 30px;
   padding-top: 200px;
-  /* padding-bottom: 200px; */
 
   color: var(--hero-text-color);
   font-weight: 900;
@@ -202,7 +201,7 @@ address {
   max-width: 1600px;
   height: 600px;
 
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)),
     url('../images/hero.jpg');
 
   margin: 0 auto;
@@ -289,23 +288,20 @@ address {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .main {
   display: flex;
 }
-
 .team-item {
   width: calc((100% - 3 * 30px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
-
 .team-card {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-title {
   margin-top: 0;
@@ -318,7 +314,7 @@ address {
 }
 .team-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -327,13 +323,10 @@ address {
 
 .icon {
   display: flex;
-  margin: 0;
-  padding: 16px 32px 30px 32px;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
   outline: 1px solid red;
 }
-
 .team-social-icon {
   display: flex;
   align-items: center;
@@ -342,7 +335,8 @@ address {
   height: 44px;
   fill: #afb1b8;
 }
-.team-social-icon:hover {
+.team-social-icon:hover,
+.team-social-icon:focus {
   fill: #ffffff;
   background-color: #2196f3;
   border-radius: 50%;
@@ -350,8 +344,12 @@ address {
 .icon-social {
   fill: #afb1b8;
 }
-.icon-social:hover {
+.icon-social:hover,
+.icon-social:focus {
   fill: #ffffff;
+}
+.img {
+  max-width: 100%;
 }
 
 /* Клиенты Clients */
@@ -382,13 +380,15 @@ address {
   border-radius: 2px;
   fill: #afb1b8;
 }
-.client-log:hover {
+.client-log:hover,
+.client-log:focus {
   border: 1px solid #2196f3;
 }
 .client-icon {
   fill: #afb1b8;
 }
-.client-icon:hover {
+.client-icon:hover,
+.client-icon:focus {
   fill: #2196f3;
 }
 
@@ -463,7 +463,8 @@ address {
   align-items: center;
   justify-content: center;
 }
-.icon-soc-net:hover {
+.icon-soc-net:hover,
+.icon-soc-net:focus {
   background-color: #2196f3;
 }
 .list-social-network:not(:last-child) {
@@ -515,7 +516,8 @@ address {
 .list-card:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-.list-card:hover {
+.list-card:hover,
+.list-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
