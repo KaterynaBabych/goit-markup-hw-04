@@ -147,7 +147,6 @@ address {
   fill: currentColor;
   margin-right: 10px;
   align-items: center;
-  fill: currentColor;
 }
 .mail:hover,
 .mail:focus .mail-icon {
@@ -170,11 +169,19 @@ address {
 /* Hero */
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)),
+    url('../images/hero.jpg');
+
+  margin: 0 auto;
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
 
   color: var(--hero-text-color);
   font-weight: 900;
@@ -195,16 +202,6 @@ address {
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
-}
-
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)),
-    url('../images/hero.jpg');
-
-  margin: 0 auto;
 }
 
 /* все заголовки */
@@ -303,6 +300,7 @@ address {
 .team-card {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #fff;
 }
 .team-title {
   margin-top: 0;
@@ -324,7 +322,7 @@ address {
 
 .icon {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none;
   outline: 1px solid red;
 }
@@ -335,20 +333,15 @@ address {
   width: 44px;
   height: 44px;
   fill: #afb1b8;
+  background: #ffffff;
 }
 .team-social-icon:hover,
-.team-social-icon:focus {
+.team-social-icon:focus .icon {
   fill: #ffffff;
   background-color: #2196f3;
   border-radius: 50%;
 }
-.icon-social {
-  fill: #afb1b8;
-}
-.icon-social:hover,
-.icon-social:focus {
-  fill: #ffffff;
-}
+
 .img {
   max-width: 100%;
 }
@@ -383,14 +376,8 @@ address {
 }
 .client-log:hover,
 .client-log:focus {
-  border: 1px solid #2196f3;
-}
-.client-icon {
-  fill: #afb1b8;
-}
-.client-icon:hover,
-.client-icon:focus {
   fill: #2196f3;
+  border: 1px solid #2196f3;
 }
 
 /* Футер */
@@ -416,26 +403,26 @@ address {
   padding-bottom: 9px;
 }
 .adress {
-  color: var(--hero-text-color);
+  color: rgba(255, 255, 255, 1);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.adress:hover,
+/* .adress:hover,
 .adress:focus {
   color: var(--acent-color);
-}
+} */
 
 .mail-footer {
-  color: var(--hero-text-color);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 2.42;
   letter-spacing: 0.03em;
 }
 .tel-footer {
-  color: var(--hero-text-color);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 2.42;
@@ -448,6 +435,8 @@ address {
   font-size: 14px;
   line-height: 1.17;
   padding-bottom: 20px;
+  margin: 0;
+  padding-top: 0;
 }
 .icon-social-network {
   display: inline-flex;
@@ -480,7 +469,7 @@ address {
 .button-navigation {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .navigator-list:not(:last-child) {
   margin-right: 8px;
